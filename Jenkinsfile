@@ -18,7 +18,7 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo 'Retrieving source from github' 
-                git branch: '[GIT_BRANCH]',
+                git branch: 'main',
                     url: 'https://github.com/ravishmonga21/events-api-service.git'
                 echo 'Did we get the source?' 
                 sh 'ls -a'
